@@ -14,6 +14,9 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: #111;
   transition: 1s;
 }
@@ -27,7 +30,7 @@ header {
   top: -10rem;
   display: flex;
   align-items: center;
-  transition: 1s;
+  transition: 2s;
 }
 
 header.active {
@@ -41,28 +44,38 @@ header.active {
   height: 7.5rem;
   border-radius: 50%;
   margin: 1rem;
-  border: 5px solid #EEE;
+  border: 4px solid #EEE;
 }
 
-#mode {
-  position: absolute;
-  top:0;
-  right:0;
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section h2 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  padding: 1rem;
+  border-bottom: 2px solid #EEE;
+}
+
+section ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   margin: 1rem;
-  width: 50px;
-  height: 50px;
-  background: url("light.svg") no-repeat;
-  transition: 1s;
 }
 
-#mode.active {
-  background: url("dark.svg") no-repeat;
-}
-
-#mode:hover {
-  transform: rotate(90deg);
-}
-
-.skills {
-  margin: 1rem;
+section ul li {
+  font-size: 1.5rem;
+  margin: .25rem;
+  text-align: center;
 }
