@@ -134,19 +134,20 @@ h2 {
 .projects-content {
   width: 100%;
   max-width: 60rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  display: grid;
   align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .project {
+  max-width: 25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem 0 2rem 0;
+  margin: 1rem 1rem 2rem 1rem;
+  padding: 0 1rem 1rem 1rem;
   background: #020;
-  padding: 0 2rem .5rem 2rem;
   border-radius: 25px;
 }
 
@@ -168,6 +169,11 @@ h2 {
 
 #rps-preview {
   background: url("pics/rps.png") no-repeat;
+  background-size: 100%;
+}
+
+#portfolio-preview {
+  background: url("pics/portfolio.png") no-repeat;
   background-size: 100%;
 }
 
@@ -259,6 +265,6 @@ form button:hover {
 
 @media only screen and (min-width: 961px) {
   .projects-content {
-    flex-direction: row;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
