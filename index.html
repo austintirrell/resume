@@ -15,40 +15,88 @@
   <header>
     <div class="me"></div>
     <div class="intro">
-      <h1>Hello, <br>I'm Austin Tirrell...</h1>
-      <p>Front-end Web Developer</p>
+      <h1>Hello, <br>I'm Austin Tirrell.</h1>
+      <p>Front End Web Developer</p>
     </div>
   </header>
 
-  <div class="content">
-
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li>Sketch</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Education</h2>
-      <ul>
-        <li>High School Diploma</li>
-        <li>Certificate in Web Application Development (in progress)</li>
-      </ul>
-    </section>
-
+  <div class="about">
+    <div class="about-content">
+      <h2>A little about me</h2>
+      <p>
+        Tech Enthusiast - from building a simple Android app when I was 12,
+        building desktop PCs from scratch, and diving into logo design. I now have stumbled
+        upon a love for web development.
+      </p>
+      <p>
+        If I'm not at work, or coding away at one of my projects, you will find me playing
+        disc golf, video games, walking my dog, and hanging out with my beautiful wife.
+      </p>
+    </div>
   </div>
 
+  <div class="tools">
+    <div class="tools-content">
+      <h2>Tools that I know well</h2>
+      <div class="tools-container">
+        <div class="tool">
+          <p>HTML5</p>
+          <div class="icon" id="html-icon"></div>
+        </div>
+
+        <div class="tool">
+          <p>CSS3</p>
+          <div class="icon" id="css-icon"></div>
+        </div>
+
+        <div class="tool">
+          <p>JavaScript</p>
+          <div class="icon" id="js-icon"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="projects">
+    <h2>Completed projects</h2>
+    <div class="projects-content">
+      <div class="project">
+        <p>Sketch App</p>
+        <div class="screenshot" id="sketch-preview"></div>
+        <div class="buttons">
+          <a href="https://github.com/austintirrell/sketch" target="_blank">Code</a>
+          <a href="https://austintirrell.github.io/sketch/" target="_blank">Live preview</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <p>Rock Paper Scissors App</p>
+        <div class="screenshot" id="rps-preview"></div>
+        <div class="buttons">
+          <a href="https://github.com/austintirrell/rockpaperscissors/" target="_blank">Code</a>
+          <a href="https://austintirrell.github.io/rockpaperscissors/" target="_blank">Live preview</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact">
+    <div class="form-content">
+      <h2>Hit me up</h2>
+      <form action="https://formsubmit.co/austinjtirrell@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="https://austintirrell.github.io/resume/">
+        <input type="text" name="_honey" style="display:none">
+        <input type="hidden" name="_captcha" value="false">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="msg">Message:</label>
+        <textarea id="msg" name="msg" wrap="soft"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
   <script src="script.js" async defer></script>
 </body>
-
 </html>
