@@ -177,6 +177,11 @@ h2 {
   background-size: 100%;
 }
 
+#tpa-preview {
+  background: url("pics/tpa.png") no-repeat;
+  background-size: 100%;
+}
+
 .buttons {
   width: 100%;
   display: flex;
