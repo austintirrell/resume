@@ -162,6 +162,11 @@ h2 {
   border-radius: 15px;
 }
 
+#calculator-preview {
+  background: url("pics/calculator.png") no-repeat;
+  background-size: 100%;
+}
+
 #sketch-preview {
   background: url("pics/sketch.png") no-repeat;
   background-size: 100%;
